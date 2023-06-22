@@ -1,7 +1,9 @@
 # Test Automation Project: December Labs
+
 Este proyecto es un conjunto de pruebas automatizadas utilizando Selenium, Pytest y Python para probar la funcionalidad del sitio web de December Labs.
 
 ##Requisitos
+
 Python 3.x
 
 Biblioteca Selenium WebDriver
@@ -9,6 +11,7 @@ Biblioteca Selenium WebDriver
 Pytest
 
 ##Instalación
+
 Clona el repositorio del proyecto:
 bash
 git clone https://github.com/lucascalvimonte/DecLabsProject.git
@@ -29,7 +32,9 @@ venv\Scripts\activate
 
 Instala las dependencias del proyecto:
 pip install -r requirements.txt
+
 ##Estructura del proyecto
+
 El proyecto "December Labs" está compuesto por los siguientes componentes y clases:
 
 - `HoustonPage`: Esta clase representa la página de Houston y contiene los elementos y métodos relacionados con dicha página. Algunos de los elementos incluyen el botón para programar una consulta gratuita y el formulario emergente. La página también define la URL base para la página de Houston.
@@ -44,7 +49,9 @@ El proyecto "December Labs" está compuesto por los siguientes componentes y cla
 Las pruebas en el proyecto se implementan utilizando el framework de pruebas pytest. pytest es una herramienta poderosa y flexible que simplifica la escritura y ejecución de casos de prueba. Permite una sintaxis sencilla y clara para escribir aserciones y proporciona una amplia gama de funcionalidades adicionales, como la parametrización de casos de prueba y la generación de informes detallados. Utilizar pytest en el proyecto ofrece ventajas en términos de legibilidad del código y facilidad de mantenimiento de las pruebas.
 
 La estructura del proyecto se organiza de manera lógica, con clases específicas para cada página y una clase de prueba que utiliza esas clases para validar el funcionamiento de la aplicación. El uso de una clase base (`BasePage`) ayuda a encapsular la lógica común de interacción con los elementos de la página.
+
 ##Mejoras realizadas
+
 Refactorización del código para utilizar un enfoque basado en clases y métodos reutilizables.
 Extracción de elementos de la página a clases separadas para una mejor organización y mantenibilidad.
 Implementación de un método find_elements en la clase BasePage para buscar múltiples elementos de manera eficiente.
@@ -59,7 +66,9 @@ Implementación de un sistema de manejo de configuración flexible, por ejemplo,
 Uso de anotaciones y decoradores de pytest para aprovechar características adicionales, como la parametrización de casos de prueba y la generación de informes detallados de ejecución.
 
 Incorporación de buenas prácticas de desarrollo de pruebas, como la separación de las pruebas unitarias de las pruebas de integración, el uso de mocks para simular dependencias externas y la implementación de aserciones claras y significativas.
+
 ##Ejecución de los tests
+
 Asegúrate de tener el entorno virtual activado (si lo creaste):
 
 En macOS/Linux:
@@ -73,5 +82,7 @@ bash
 cd proyecto-decemberlabs
 Ejecuta los tests utilizando el siguiente comando:
 python -m unittest discover -s tests
+
 #Notas adicionales
+
 Asegúrate de tener el controlador del navegador (en este caso, ChromeDriver) configurado correctamente y en tu variable de entorno PATH.
