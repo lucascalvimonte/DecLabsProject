@@ -21,16 +21,19 @@ def setup(request):
 class TestDecemberLabs:
 
     def test_navigate_to_dec_labs(self):
-        self.dec_labs_page.navigate_to_december_labs()
+        self.dec_labs_page.navigate_to_december_labs_page()
 
     def test_validate_title_dec_labs(self):
-        self.dec_labs_page.validate_title_dec_labs()
+        self.dec_labs_page.validate_december_labs_page_title()
 
     def test_validate_menu_dec_labs(self):
-        self.dec_labs_page.validate_visible_menu_elements()
+        self.dec_labs_page.validate_menu_elements_visibility()
 
     def test_navigate_to_houston(self):
-        self.dec_labs_page.go_to_houston()
+        self.dec_labs_page.navigate_to_houston_page()
+
+    def test_houston_page_title(self):
+        self.houston_page.validate_houston_page_title()
 
     def test_validate_url_houston(self):
         self.houston_page.validate_url_houston()

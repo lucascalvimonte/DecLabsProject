@@ -21,16 +21,16 @@ class DecemberLabsPage(BasePage):
     def get_base_url():
         return "https://inhouse.decemberlabs.com/"
 
-    def navigate_to_december_labs(self):
+    def navigate_to_december_labs_page(self):
         self.driver.get(self.get_base_url())
 
-    def validate_title_dec_labs(self):
+    def validate_december_labs_page_title(self):
         expected_title = 'December Labs: UX/UI Design and Mobile App & Web Development'
         return self.validate_title(expected_title)
 
-    def validate_visible_menu_elements(self):
+    def validate_menu_elements_visibility(self):
         self.find_elements(self.elements)
 
-    def go_to_houston(self):
+    def navigate_to_houston_page(self):
         self.scroll_down()
         self.click_element(self.lnk_houston)

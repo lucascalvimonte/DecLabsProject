@@ -14,7 +14,7 @@ class HoustonPage(BasePage):
     def get_base_url():
         return "https://inhouse.decemberlabs.com/locations/houston/"
 
-    def validate_title_houston(self):
+    def validate_houston_page_title(self):
         expected_title = 'Houston Web & App Developers | December Labs'
         return self.validate_title(expected_title)
 
